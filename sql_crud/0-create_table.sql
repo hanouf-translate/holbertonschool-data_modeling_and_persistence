@@ -2,8 +2,8 @@ CREATE TABLE IF NOT EXISTS books (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
     author TEXT NOT NULL,
-    genre TEXT,
-    price REAL,
-    stock INTEGER DEFAULT 0,
-    published_year INTEGER
+    genre TEXT NOT NULL,
+    price REAL NOT NULL,
+    stock INTEGER NOT NULL DEFAULT 0,
+    published_year INTEGER NOT NULL
 );
